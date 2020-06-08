@@ -6,7 +6,7 @@
     "node": "12.11.1"
   },
   "scripts": {
-    "start": "cd backend/ && node server",
+    "start": "npm install && cd backend/ && node server",
     "build": "cd react-ui/ && npm install && npm run build",
     "postinstall": "npm build"
   },
