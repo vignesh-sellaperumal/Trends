@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-class TestComponent extends React.Component{
+class HomeComponent extends React.Component{
     constructor(){
         super();
         this.state = {
@@ -34,4 +34,4 @@ class TestComponent extends React.Component{
     }
 }
 
-export default TestComponent;
+export default HomeComponent;
