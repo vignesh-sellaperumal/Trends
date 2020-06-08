@@ -4,17 +4,15 @@ import axios from 'axios';
 import './App.css';
 
 function App() {
-  componentdidmount(){
-  axios.get('https://192.168.43.200:5000/users/')
+  axios.get('https://localhost:5000/users/')
         .then(response => {
             const data = response.data;
             for(let d of data)
             {
                     alert(d.username);
             }
-  })
-    .catch(err => alert(err))
-  }
+        })
+        .catch(err => alert(err))
   return (
     <div className="App">
       <h1>Hello!</h1>
