@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node server",
     "build": "cd react-ui/ && npm install && npm run build",
-    "postinstall": "ng build"
+    "postinstall": "npm build"
   },
   "cacheDirectories": [
     "node_modules",
