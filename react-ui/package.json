@@ -24,5 +24,6 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "https://localhost:5000"
+  "proxy": "https://localhost:5000",
+  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix reactapp && npm run build --prefix reactapp"
 }
