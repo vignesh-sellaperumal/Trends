@@ -1,23 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const path = require('path');
 
 require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 5000;
-
-if (process.env.NODE_ENV === 'production') {
-  // Exprees will serve up production assets
-  app.use(express.static('react-ui/build'));
-
-  // Express serve up index.html file if it doesn't recognize route
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../react-ui', 'src', 'App.js'));
-  });
-}
 
 app.use(cors());
 app.use(express.json());
