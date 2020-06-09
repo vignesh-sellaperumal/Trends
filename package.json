@@ -8,7 +8,8 @@
   "scripts": {
     "start": "cd backend/ && npm install express --save && node server",
     "build": "cd react-ui/ && npm install && npm run build",
-    "postinstall": "npm build"
+    "postinstall": "npm build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix reactapp && npm run build --prefix reactapp"
   },
   "cacheDirectories": [
     "node_modules",
